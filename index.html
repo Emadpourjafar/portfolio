@@ -1,109 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عماد پورجعفر | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="overlay">
-            <h1>Emad Pourjafar</h1>
-            <p>Exceptional Portfolio of a Visionary Creator</p>
+  <header>
+    <div class="container">
+      <h1>عماد پورجعفر</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="home" class="intro">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <p>This is where you can view my work and learn more about me.</p>
+    </div>
+  </section>
+  
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <!-- Example project card -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Project 1">
+          <div class="overlay">
+            <h3>Project 1</h3>
+            <p>Click to see details</p>
+          </div>
         </div>
-    </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate and visionary creator, specializing in web development, digital marketing, and innovative design. Over the years, I’ve worked on numerous projects that blend creativity and functionality to deliver exceptional results.</p>
-    </section>
-
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Developed an e-commerce website with React.js and Node.js.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Created a mobile application using Flutter to enhance user engagement.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Designed a modern landing page using HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 4">
-                <h3>Project 4</h3>
-                <p>Worked on a complete redesign of a corporate website for better user experience.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 5">
-                <h3>Project 5</h3>
-                <p>Developed a personal blog platform using WordPress and custom themes.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 6">
-                <h3>Project 6</h3>
-                <p>Built a task management app to improve team productivity using Vue.js.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 7">
-                <h3>Project 7</h3>
-                <p>Created a fitness tracking website using Angular and Firebase.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 8">
-                <h3>Project 8</h3>
-                <p>Designed a portfolio website for a photographer with HTML5, CSS3, and JS.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 9">
-                <h3>Project 9</h3>
-                <p>Developed a social networking site for creative professionals using PHP.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 10">
-                <h3>Project 10</h3>
-                <p>Created a dynamic job board site using Ruby on Rails.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 11">
-                <h3>Project 11</h3>
-                <p>Built an online marketplace with a payment gateway integration using JavaScript.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 12">
-                <h3>Project 12</h3>
-                <p>Developed a custom CRM system for small businesses using Laravel.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 13">
-                <h3>Project 13</h3>
-                <p>Worked on a real-time chat application with WebSocket technology.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 14">
-                <h3>Project 14</h3>
-                <p>Developed a data visualization dashboard using D3.js for analytics.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/200" alt="Project 15">
-                <h3>Project 15</h3>
-                <p>Created a task scheduler web app with a drag-and-drop interface using React.</p>
-            </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Project 2">
+          <div class="overlay">
+            <h3>Project 2</h3>
+            <p>Click to see details</p>
+          </div>
         </div>
-    </section>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 عماد پورجعفر. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Feel free to <a href="mailto:youremail@example.com">get in touch</a> for collaborations or inquiries.</p>
-    </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
