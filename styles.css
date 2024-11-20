@@ -1,151 +1,126 @@
-/* استایل‌های عمومی */
-body {
-  font-family: 'Arial', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
   color: #333;
 }
 
-header {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
+  min-height: 100vh;
 }
 
-header .logo h1 {
-  font-size: 2rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* بخش هدر صفحه خانگی */
-#home {
-  background: url('hero-image.jpg') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 100px 20px;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 1.5rem;
-}
-
-/* بخش درباره من */
-#about {
-  padding: 50px 20px;
+.sidebar {
+  width: 250px;
   background-color: #fff;
-  text-align: center;
-}
-
-#about h2 {
-  font-size: 2rem;
-}
-
-#about p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-/* بخش نمونه کارها */
-#portfolio {
-  padding: 50px 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-#portfolio h2 {
-  font-size: 2rem;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-  padding: 20px;
-}
-
-.card img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.card p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-/* بخش تماس با من */
-#contact {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
+  border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
 }
 
-form input, form textarea {
+.sidebar .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile h2 {
+  font-size: 1.2em;
   margin: 10px 0;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
-form button {
-  padding: 15px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-form button:hover {
-  background-color: #444;
-}
-
-/* فوتر */
-footer {
-  background-color: #000;
-  color: #fff;
+.sidebar .profile p {
+  font-size: 0.9em;
+  color: #666;
   text-align: center;
-  padding: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.home h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.home .btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  main {
+    padding: 20px;
+  }
 }
