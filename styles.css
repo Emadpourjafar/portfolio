@@ -16,7 +16,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    animation: gradientMove 6s infinite;
+    animation: gradientMove 10s infinite;
 }
 
 @keyframes gradientMove {
