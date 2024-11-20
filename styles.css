@@ -1,126 +1,122 @@
-/* سبک‌های کلی */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #111;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.hero {
-    height: 100vh;
-    background-image: url('https://via.placeholder.com/1920x1080'); /* عکسی برای پس‌زمینه */
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    animation: gradientMove 10s infinite;
+.container {
+  width: 80%;
+  margin: auto;
 }
 
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  display: inline;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.intro, .projects, .contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.projects .project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  position: relative;
+  width: 30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
+.project-card:hover .overlay {
+  opacity: 1;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: #ddd;
+.contact form {
+  max-width: 500px;
+  margin: auto;
 }
 
-.about, .projects, .contact {
-    padding: 50px 20px;
-    text-align: center;
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+button {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+button:hover {
+  background-color: #444;
 }
 
-.project {
-    width: 200px;
-    height: 250px;
-    background: #222;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    padding: 10px;
-    transition: transform 0.3s;
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #bbb;
-}
-
-.project:hover {
-    transform: scale(1.05);
-    background: #444;
-}
-
-.contact a {
-    color: #00aaff;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Media Queries برای ریسپانسیو کردن سایت */
-
-/* برای موبایل‌ها */
-@media screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .about, .projects, .contact {
-        padding: 30px 10px
