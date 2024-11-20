@@ -6,15 +6,27 @@ body {
 }
 
 .hero {
-    height: 100vh; 
-    background: linear-gradient(120deg, #111, #333, #555); 
-    background-size: 200% 200%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    position: relative; 
-    animation: gradientMove 6s infinite; 
+    height: 100vh;
+    background: linear-gradient(120deg, #111, #333, #555);
+    background-size: 200% 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    animation: gradientMove 6s infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .overlay {
@@ -76,15 +88,3 @@ h2 {
 .contact a:hover {
     text-decoration: underline;
 }
-
-@keyframes gradientMove { 
-    0% { 
-            background-position: 0% 50%; 
-           }
-    50% { 
-              background-position: 100% 50%;
-              } 
-    100% {
-                background-position: 0% 50%; 
-                } 
-    }
