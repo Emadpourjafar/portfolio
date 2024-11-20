@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+.hero {
+    height: 100vh; 
+    background: linear-gradient(120deg, #111, #333, #555); 
+    background-size: 200% 200%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    position: relative; 
+    animation: gradientMove 6s infinite; 
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.about, .projects, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 200px;
+    height: 150px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background: #444;
+}
+
+.contact a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@keyframes gradientMove { 
+    0% { 
+            background-position: 0% 50%; 
+           }
+    50% { 
+              background-position: 100% 50%;
+              } 
+    100% {
+                background-position: 0% 50%; 
+                } 
+    }
