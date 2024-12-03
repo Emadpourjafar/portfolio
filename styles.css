@@ -4,12 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #4CAF50;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
 header .logo {
@@ -51,6 +53,7 @@ section {
     background: #fff;
     border: 1px solid #ddd;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .contact form {
@@ -65,7 +68,7 @@ section {
 }
 
 .contact form button {
-    background: #333;
+    background: #4CAF50;
     color: #fff;
     border: none;
     padding: 10px;
